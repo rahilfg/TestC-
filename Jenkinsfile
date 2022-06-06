@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Example2') {
+        stages('Example2') {
             
             steps{
             sh "git clone https://github.com/rahilfg/TestC-.git"
