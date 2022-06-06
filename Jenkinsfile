@@ -19,6 +19,7 @@ pipeline {
             }
             steps {
                 sh "pwd"
+                sh "./hello"
             }
         }
     }
