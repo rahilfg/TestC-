@@ -11,8 +11,14 @@ pipeline {
             }
         }
         stage('Example1') {
+            input {
+                message "Compliation Successful.Do you want to execute the program ?"
+                ok "Yes."
+                submitter "alice,bob"
+                
+            }
             steps {
-                echo 'Deploying'
+                sh "pwd"
             }
         }
     }
