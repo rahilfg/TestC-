@@ -5,6 +5,7 @@ pipeline {
             steps {
                 
                 sh "rm -rfv *"
+                sh "cd TestC"
                 sh "git clone https://github.com/rahilfg/TestC-.git"
                 sh "pwd"
                 sh "g++ -o hello hello.cpp"
