@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Example1') {
+        stage('Example0') {
             steps{
             
             sh "pwd"
@@ -13,9 +13,11 @@ pipeline {
                 submitter "alice,bob"
                 
             }
+         stage('Example1') {
             steps{
             sh "pwd"
             }
+         }
         }
     }
 }
