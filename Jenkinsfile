@@ -4,7 +4,8 @@ pipeline {
         stage('Example0') {
             steps {
                 
-                
+                sh "rm -rfv *"
+                sh "git clone https://github.com/rahilfg/TestC-.git"
                 sh "pwd"
                 sh "g++ -o hello hello.cpp"
                 
