@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('Example0') {
+        stage('Compile') {
             steps {
                 
                 
@@ -14,7 +14,7 @@ pipeline {
                 
             }
         }
-        stage('Example1') {
+        stage('Run') {
             input {
                 message "Compliation Successful.Do you want to execute the program ?"
                 ok "Yes."
