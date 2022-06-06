@@ -1,12 +1,11 @@
 pipeline {
     agent any
     stages {
-        stages('Example2') {
-            
+        stages('Example1') {
             steps{
             sh "git clone https://github.com/rahilfg/TestC-.git"
             sh "pwd"
-             sh "g++ -o hello hello.cpp"
+            sh "g++ -o hello hello.cpp"
             }
             
             input {
